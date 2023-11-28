@@ -14,6 +14,11 @@
                 <field name="gender"/>
                     </group>
                 </sheet>
+<!--                    <div class="oe_chatter">-->
+<!--                    <field name="message_follower_ids"/>-->
+<!--                    <field name="message_id" options="{'post_refresh':'recepient'}"/>-->
+<!--                     </div>-->
+
             </form>
         </field>
 
@@ -33,6 +38,7 @@
             </tree>
         </field>
 
+
     </record>
 <record id="action_hospital_patient" model="ir.actions.act_window">
         <field name="name">Patient</field>
@@ -40,13 +46,15 @@
         <field name="res_model">hospital.patient</field>
         <field name="view_mode">tree,form</field>
 
+
+
     </record>
 
-<!--    <menuitem id="menu_patient"-->
-<!--              name="patient"-->
-<!--        parent="menu_hospital_operations">-->
-<!--        action="action_hospital_patient"-->
-<!--        sequence="10"/>-->
+    <menuitem id="menu_patient"
+              name="patient"
+        parent="menu_hospital_operations"
+        action="action_hospital_patient"
+        sequence="10"/>
 
 
 
